@@ -4,9 +4,9 @@ public interface EventLifeCycle
 {
 	void start() throws Exception;
 
-	void prePersist() throws Exception;
+	void setPrePersistence() throws Exception;
 
-	void postPersist() throws Exception;
+	void setPostPersistence() throws Exception;
 
 	void success() throws Exception;
 

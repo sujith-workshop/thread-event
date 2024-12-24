@@ -58,13 +58,13 @@ public abstract class Event implements EventLifeCycle
 	}
 
 	@Override
-	public void prePersist() throws Exception
+	public void setPrePersistence() throws Exception
 	{
 		setEventStage(EventStage.PRE_PERSISTENCE);
 	}
 
 	@Override
-	public void postPersist() throws Exception
+	public void setPostPersistence() throws Exception
 	{
 		setEventStage(EventStage.POST_PERSISTENCE);
 	}
